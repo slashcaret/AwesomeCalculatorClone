@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Poppins:wght@400;500&family=Quicksand&family=Raleway:wght@300&family=Roboto+Mono:wght@300&family=Work+Sans:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    background: rgb(0,170,254);
+    background: linear-gradient(90deg, rgba(0,170,254,1) 0%, rgba(0,213,180,1) 35%, rgba(0,254,109,1) 100%);
+    width: 100%;
+    height: 100vh;
+}
+.calcframe{
+    width: 20rem;
+    height: 31rem;
+    background-color: black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.display{
+    width: 100%;
+    height: 6rem;
+    background-color: #00352E;
+}
+
+#display-text{
+    width: calc(100% - 1.4rem);
+    height: inherit;
+    margin: 0;
+    padding: 0rem 0.7rem;
+    border: none;
+    animation: none;
+    background-color: #00352E;
+    outline: none;
+    font-size: xx-large;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    text-align: right;
+}
+
+.btnGrid{
+    background-color: white;
+    width: 100%;
+    height:25rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 0.1rem;
+    padding: 0px;
+}
+
+
+button{
+    border: none;
+    background-color: #BFF5EB;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    font-size: larger;
+    outline: none;
+}
+
+.activeBtn{
+    box-shadow:0px 0px 10px rgba(0,0,0,0.2) inset;
+}
+
+
+#ac{
+    grid-row-start: 1;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+
+/* 
+
+#del{
+    grid-row-start: 1;
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+
+#divide{
+    grid-row-start: 1;
+    grid-column-start: 4;
+    grid-column-end: 5;
+}
+
+#num1{
+    grid-row-start: 2;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+#num2{
+    grid-row-start: 2;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+#num3{
+    grid-row-start: 2;
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+
+#multiply{
+    grid-row-start: 2;
+    grid-column-start: 4;
+    grid-column-end: 5;
+}
+
+#num4{
+    grid-row-start: 3;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+#num5{
+    grid-row-start: 3;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+#num6{
+    grid-row-start: 3;
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+
+#add{
+    grid-row-start: 3;
+    grid-column-start: 4;
+    grid-column-end: 5;
+}
+
+#num7{
+    grid-row-start: 4;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+#num8{
+    grid-row-start: 4;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+#num9{
+    grid-row-start: 4;
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+
+#subtract{
+    grid-row-start: 4;
+    grid-column-start: 4;
+    grid-column-end: 5;
+}
+
+#decimal{
+    grid-row-start: 5;
+    grid-column-start: 1;
+    grid-column-end: 2;
+} 
+
+#num0{
+    grid-row-start: 5;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}  */
+#eval{
+    grid-row-start: 5;
+    grid-column-start: 3;
+    grid-column-end: 5;
+}
